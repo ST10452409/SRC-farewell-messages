@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101b2b">
+  <meta name="description" content="A collection of memories, gratitude and personal messages from the SRC journey.">
+  <title>Beyond the Term | SRC Farewell 2026</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Beyond the Term home">
+      <span class="brand-mark">B</span>
+      <span>BEYOND THE TERM<span class="brand-sub">SRC • 2026</span></span>
+    </a>
+    <span class="topbar-note">A chapter worth remembering</span>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> THE END OF A TERM. THE START OF A LEGACY.</p>
+        <h1>Some chapters<br>stay with <span>us.</span></h1>
+        <p class="hero-description">A little time capsule of the people, lessons and moments that made this SRC journey what it was.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#message">Read the farewell <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#memories">Explore the memories <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="hero-footnote"><span class="status-dot"></span> MADE WITH GRATITUDE · 2026</div>
+      </div>
+
+      <div class="hero-visual" aria-label="SRC memory photographs">
+        <div class="photo-frame">
+          <img id="hero-photo" src="images/photo-01.jpeg" alt="A memory from the SRC journey">
+          <div class="photo-shade"></div>
+          <div class="photo-caption">
+            <span class="caption-kicker">THE PEOPLE. THE MOMENTS.</span>
+            <span class="caption-title">A journey shared.</span>
+          </div>
+          <div class="photo-counter"><span id="photo-current">01</span><span class="counter-divider"></span><span id="photo-total">11</span></div>
+        </div>
+        <div class="visual-orbit orbit-one"></div>
+        <div class="visual-orbit orbit-two"></div>
+        <span class="visual-label">A COLLECTION OF MOMENTS</span>
+      </div>
+    </section>
+
+    <section class="section intro-section" id="message">
+      <div class="section-index">01 / A NOTE OF THANKS</div>
+      <div class="intro-content">
+        <p class="eyebrow">TO EVERYONE WHO WAS PART OF IT</p>
+        <h2>Leadership is never<br> a one-person story.</h2>
+        <div class="intro-columns">
+          <p>This chapter was shaped by people who showed up, challenged us, encouraged us and gave the work meaning. It brought its share of difficult days, unexpected lessons, laughter and moments we will carry long after the term has ended.</p>
+          <p>To the students, fellow student leaders, lecturers, campus management, the Campus Head, SRC Manager and Wellness Coordinator: thank you. Your trust, guidance, patience and support mattered. Every conversation, opportunity and contribution helped shape this journey.</p>
+        </div>
+        <p class="closing-line">The title may change. The impact, the friendships and the memories remain.</p>
+      </div>
+    </section>
+
+    <section class="section memories-section" id="memories">
+      <div class="section-heading">
+        <div>
+          <div class="section-index">02 / THE ARCHIVE</div>
+          <p class="eyebrow">A FEW MOMENTS WE KEPT</p>
+          <h2>Not just photographs.<br><span>Pieces of the journey.</span></h2>
+        </div>
+        <div class="gallery-controls">
+          <button class="round-control" id="previous-photo" aria-label="Previous photograph">←</button>
+          <button class="round-control" id="next-photo" aria-label="Next photograph">→</button>
+        </div>
+      </div>
+      <div class="gallery-main">
+        <div class="gallery-image-wrap">
+          <img id="gallery-photo" src="images/photo-01.jpeg" alt="SRC memory photograph">
+          <div class="gallery-gradient"></div>
+          <div class="gallery-label"><span>MEMORY</span><strong id="gallery-number">01 / 11</strong></div>
+        </div>
+      </div>
+      <p class="gallery-hint">Use the arrows to move through the photographs.</p>
+    </section>
+
+    <section class="private-section">
+      <div class="private-card">
+        <div class="private-icon">✳</div>
+        <div class="section-index">03 / JUST FOR YOU</div>
+        <p class="eyebrow">A PERSONAL MESSAGE</p>
+        <h2>There's a letter<br>with your name on it.</h2>
+        <p class="private-description">Some things are better said personally. Sign in with the password shared with you to open your message.</p>
+
+        <form id="login-form" class="login-form">
+          <label for="password">Your personal password</label>
+          <div class="password-wrap">
+            <input id="password" type="password" autocomplete="current-password" placeholder="Enter your password" required>
+            <button type="button" id="toggle-password" class="show-password">Show</button>
+          </div>
+          <button class="button button-primary login-button" type="submit" id="login-button">Unlock my letter <span aria-hidden="true">↗</span></button>
+          <p id="login-status" class="form-status" role="status"></p>
+        </form>
+
+        <article id="letter-panel" class="letter-panel" hidden>
+          <div class="letter-topline"><span>PERSONAL LETTER</span><button type="button" id="sign-out" class="text-link">Sign out</button></div>
+          <p class="letter-greeting">A message for</p>
+          <h3 id="letter-recipient">You.</h3>
+          <p id="letter-title" class="letter-title"></p>
+          <div id="letter-message" class="letter-message"></div>
+          <p id="letter-signature" class="letter-signature"></p>
+        </article>
+        <p class="privacy-note"><span>✦</span> Your password opens the personal message prepared for you. Please keep it to yourself.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#"><span class="brand-mark">B</span><span>BEYOND THE TERM<span class="brand-sub">SRC • 2026</span></span></a>
+    <p>For the memories, the lessons and the people.</p>
+    <span class="footer-year">© 2026</span>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

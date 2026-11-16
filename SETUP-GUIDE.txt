@@ -1,0 +1,35 @@
+BEYOND THE TERM | SRC FAREWELL 2026
+NO-FIREBASE VERSION
+
+FILES
+- index.html
+- style.css
+- script.js
+- images/photo-01.jpeg through photo-11.jpeg
+
+HOW TO USE
+1. Open the project folder in VS Code.
+2. Open script.js.
+3. Find the personalLetters array near the top.
+4. Replace each message placeholder with the correct personal letter.
+5. Ma'am Retha's password is already set to 123.
+6. Save all files.
+7. Open index.html in a browser to test the website.
+
+PASSWORDS ALREADY ADDED
+Kum: 187
+Nthabeleng: 575
+Karabo: 441
+Khumo: 347
+Jossy: 420
+BK: 623
+Lindo: 334
+Ma'am Retha: 123
+
+IMPORTANT PRIVACY NOTE
+This version does not use Firebase or a backend. The passwords and letter text are stored in
+script.js, so someone with basic website-inspection knowledge can find them. The passwords
+are a simple unlock screen, not secure authentication. Do not put confidential information
+in this static version.
+
+The public farewell page, original layout, and 11-photo slideshow have been retained.
